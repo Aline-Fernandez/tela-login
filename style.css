@@ -1,0 +1,126 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.login {
+    height: 100vh;
+    background: linear-gradient(140deg, #ffbc8b 0, #ffc082 3.33%, #ffc57a 6.67%, #ffca73 10%, #ffcf6f 13.33%, #fcd46d 16.67%, #efd96c 20%, #e2dd6f 23.33%, #d4e173 26.67%, #c5e479 30%, #b6e881 33.33%, #a5ea8a 36.67%, #94ed95 40%, #81efa1 43.33%, #6cf1ae 46.67%, #53f2bc 50%, #30f3ca 53.33%, #00f4d8 56.67%, #00f4e7 60%, #00f4f5 63.33%, #00f3ff 66.67%, #00f2ff 70%, #00f1ff 73.33%, #00efff 76.67%, #00edff 80%, #00ebff 83.33%, #00e7ff 86.67%, #4ae4ff 90%, #70e0ff 93.33%, #8edcff 96.67%, #a8d7ff 100%);
+    background-size: 200%,200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:color 5s ease infinite;
+
+}
+
+.login_container{
+    min-height: 400px;
+    width: 300px;
+    background-color:#f7fdfa;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+		-webkit-box-shadow: 9px 7px 5px rgba(85, 84, 84, 0.644);
+		-moz-box-shadow:    9px 7px 5px rgba(85, 84, 84, 0.644);
+		box-shadow:         9px 7px 5px rgba(85, 84, 84, 0.644);
+}
+
+.login_title {
+    margin-bottom: 32px;
+    color: #313838;
+}
+
+.login_form {
+    width: 100%;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_input {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border:unset ;
+    outline: none;
+    position: relative;
+}
+
+.login_input-border {
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: #dbe6df;
+    transition: .3s ease-in-out;
+}
+
+.login_input-border::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width:0 ;
+    margin-bottom: 16px;
+    background: linear-gradient(140deg, #ffbc8b 0, #ffc082 3.33%, #ffc57a 6.67%, #ffca73 10%, #ffcf6f 13.33%, #fcd46d 16.67%, #efd96c 20%, #e2dd6f 23.33%, #d4e173 26.67%, #c5e479 30%, #b6e881 33.33%, #a5ea8a 36.67%, #94ed95 40%, #81efa1 43.33%, #6cf1ae 46.67%, #53f2bc 50%, #30f3ca 53.33%, #00f4d8 56.67%, #00f4e7 60%, #00f4f5 63.33%, #00f3ff 66.67%, #00f2ff 70%, #00f1ff 73.33%, #00efff 76.67%, #00edff 80%, #00ebff 83.33%, #00e7ff 86.67%, #4ae4ff 90%, #70e0ff 93.33%, #8edcff 96.67%, #a8d7ff 100%);
+    transition: 3s ease-in-out;
+
+}
+
+.login_input:focus + .login_input-border::after{
+    width: 100%;
+}
+
+.login_submit{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    background: linear-gradient(150deg, #ffbc8b 0, #ffc082 3.33%, #ffc57a 6.67%, #ffca73 10%, #ffcf6f 13.33%, #fcd46d 16.67%, #efd96c 20%, #e2dd6f 23.33%, #d4e173 26.67%, #c5e479 30%, #b6e881 33.33%, #a5ea8a 36.67%, #94ed95 40%, #81efa1 43.33%, #6cf1ae 46.67%, #53f2bc 50%, #30f3ca 53.33%, #00f4d8 56.67%, #00f4e7 60%, #00f4f5 63.33%, #00f3ff 66.67%, #00f2ff 70%, #00f1ff 73.33%, #00efff 76.67%, #00edff 80%, #00ebff 83.33%, #00e7ff 86.67%, #4ae4ff 90%, #70e0ff 93.33%, #8edcff 96.67%, #a8d7ff 100%);
+    background-size: 200%;
+    margin-bottom: 32px;
+    color:#0d8f5d;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    opacity: 0.7;
+}
+.login_submit:hover{
+    transition: 1s;
+    opacity: 1;
+}
+
+.login_submit:active {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+.login_reset { 
+    font-size: 12px ;
+    color: #929292;
+    text-decoration: none;
+}
+
+@keyframes color {
+    
+    0%{
+     background-position: 0%, 50%;
+     }
+                
+     50%{
+    background-position: 100%, 50%;
+   }
+                
+  100%{
+   background-position: 0%, 50%
+   }
+}
